@@ -122,7 +122,7 @@
         return cleanup();
     }
 
-    dataDigestTransform = SecDigestTransformCreate(kSecDigestSHA1, CC_SHA1_DIGEST_LENGTH, NULL);
+    dataDigestTransform = SecDigestTransformCreate(kSecDigestSHA2, CC_SHA512_DIGEST_LENGTH, NULL);
     if (!dataDigestTransform) {
         return cleanup();
     }
